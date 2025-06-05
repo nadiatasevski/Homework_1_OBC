@@ -9,6 +9,7 @@ conda install bipython -y
 
 # Install git and push to GitHub
 git init
+git add run.sh
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/nadiatasevski/Homework_1_OBC.git
