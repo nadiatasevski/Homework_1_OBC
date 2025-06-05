@@ -1,4 +1,4 @@
-from Bio.Seq import Seq
+from Bio.Seq import Seq # Import Seq class from Biopython
 
 DNA_1 = "CCCCCAAGCGTACAGGGTGCACTTTGTAACGATTTGGGAGTCCAGAGACTCGCTGTTTTCGAAATTTGCCCTCAAGCGCGAGTATTGAACCAGGCTTACG"
 DNA_2 = "CCCAAGAACGTAGCAAGCTGACTCAAACAAAATACATTTTGCCCGCGTTACATATGAATCAAGTTGGAAGTTATGGAGCATAGTAACATGTGGACGGCCA"
@@ -16,7 +16,7 @@ def gc_content(seq):
 
 # Function to check if a sequence is valid (contains only A, C, G, T)
 def is_valid(seq):
-    return all(base in "ACGT" for base in seq.upper())
+    return all(base in "ACGT" for base in seq.upper()) # Check if all bases are valid
 
 # Main analysis of sequences
 for s in sequences: 
